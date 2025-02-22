@@ -21,7 +21,6 @@ interface RestaurantListApiService {
         @Query("lat") lat: Double = 0.0,
         @Query("lng") lng: Double = 0.0,
         @Query("range") range: Range = Range.ONE,
-        @Query("type") type: String = "lite",
         @Query("start") start: Int = 1,
         @Query("count") count: Int = 50,
         @Query("format") format: String = "json"

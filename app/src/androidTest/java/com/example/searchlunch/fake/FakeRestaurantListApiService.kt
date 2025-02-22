@@ -11,7 +11,6 @@ class FakeRestaurantListApiService: RestaurantListApiService {
         lat: Double,
         lng: Double,
         range: Range,
-        type: String,
         start: Int,
         count: Int,
         format: String

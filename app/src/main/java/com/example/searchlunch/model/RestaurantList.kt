@@ -33,6 +33,8 @@ data class Shop (
     val access: String?,
     val urls: Urls?,
     val photo: Photo?,
+    val open: String?,
+    val close: String?,
     @SerialName("other_memo")
     val otherMemo: String?,
     @SerialName("shop_detail_memo")

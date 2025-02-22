@@ -7,7 +7,7 @@ import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
-class NetworkRestaurantListRepositoryTest {
+class NetworkFavoriteRestaurantListRepositoryTest {
     @Test
     fun networkRestaurantListRepository_getRestaurantList_verifyRestaurantList() = runTest {
         val repository = NetworkRestaurantListRepository(
