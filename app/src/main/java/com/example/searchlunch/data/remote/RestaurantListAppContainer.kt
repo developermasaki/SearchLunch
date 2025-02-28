@@ -11,10 +11,14 @@ interface SearchAppContainer {
 }
 
 class RestaurantListAppContainer: SearchAppContainer {
-    private val baseUrl = "http://webservice.recruit.co.jp"
+    private val baseUrl = "https://webservice.recruit.co.jp"
+
+    private val json = Json {
+        ignoreUnknownKeys = true
+    }
 
     private val retrofit: Retrofit = Retrofit.Builder()
-        .addConverterFactory(Json.asConverterFactory("application/json".toMediaType()))
+        .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
         .baseUrl(baseUrl)
         .build()
 

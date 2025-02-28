@@ -5,20 +5,20 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class RestaurantList (
-    val results : Results?
+    val results : Results = Results()
 )
 
 @Serializable
 data class Results (
     @SerialName("api_version")
-    val apiVersion : String?,
+    val apiVersion : String? = "",
     @SerialName("results_available")
-    val resultsAvailable : Int?,
+    val resultsAvailable : Int? = 0,
     @SerialName("results_returned")
-    val resultsReturned : String?,
+    val resultsReturned : String? = "",
     @SerialName("results_start")
-    val resultsStart : Int?,
-    val shop : List<Shop?>?
+    val resultsStart : Int? = 0,
+    val shop : List<Shop?> = emptyList()
 )
 
 @Serializable

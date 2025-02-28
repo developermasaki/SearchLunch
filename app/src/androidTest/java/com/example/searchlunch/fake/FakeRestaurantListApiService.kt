@@ -1,7 +1,6 @@
 package com.example.searchlunch.fake
 
 import com.example.searchlunch.model.RestaurantList
-import com.example.searchlunch.network.Range
 import com.example.searchlunch.network.RestaurantListApiService
 
 class FakeRestaurantListApiService: RestaurantListApiService {
@@ -10,7 +9,7 @@ class FakeRestaurantListApiService: RestaurantListApiService {
         keyword: String?,
         lat: Double,
         lng: Double,
-        range: Range,
+        range: Int,
         start: Int,
         count: Int,
         format: String

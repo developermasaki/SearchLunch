@@ -5,13 +5,6 @@ import com.example.searchlunch.BuildConfig
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-enum class Range(val value: Int) {
-    ONE(1),
-    TWO(2),
-    THREE(3),
-    FOUR(4),
-    FIVE(5)
-}
 
 interface RestaurantListApiService {
     @GET("hotpepper/gourmet/v1")
@@ -20,9 +13,9 @@ interface RestaurantListApiService {
         @Query("keyword") keyword: String? = null,
         @Query("lat") lat: Double = 0.0,
         @Query("lng") lng: Double = 0.0,
-        @Query("range") range: Range = Range.ONE,
-        @Query("start") start: Int = 1,
+        @Query("range") range: Int = 1,
         @Query("count") count: Int = 50,
+        @Query("start") start: Int = 1,
         @Query("format") format: String = "json"
     ): RestaurantList
 }
