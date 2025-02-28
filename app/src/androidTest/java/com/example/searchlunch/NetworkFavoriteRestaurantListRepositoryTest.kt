@@ -13,6 +13,6 @@ class NetworkFavoriteRestaurantListRepositoryTest {
         val repository = NetworkRestaurantListRepository(
             restaurantListApiService = FakeRestaurantListApiService()
         )
-        assertEquals(FakeDataSource.searchRestaurantList, repository.getRestaurantList())
+        assertEquals(FakeDataSource.searchRestaurantList, repository.getRestaurantList(true, false))
     }
 }

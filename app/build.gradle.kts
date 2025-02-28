@@ -66,6 +66,15 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.jetbrains.kotlinx.coroutines.play.services)
+    //Preferences DataStore
+    implementation(libs.androidx.datastore.preferences)
+    //Navigation
+    implementation(libs.androidx.navigation.compose)
+    // Coil
+    implementation(libs.coil3.coil.compose)
+    implementation(libs.coil.network.okhttp)
     // Retrofit
     implementation(libs.retrofit)
     // Kotlin serialization
@@ -75,6 +84,7 @@ dependencies {
     implementation(libs.okhttp)
     // Room
     implementation(libs.androidx.room.runtime)
+    implementation(libs.play.services.location)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
 

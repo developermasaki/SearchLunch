@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">SearchLunch</string>
+    <string name="titleHome">Restaurant</string>
+    <string name="restaurantList">Restaurant List</string>
+    <string name="restaurantDetails">Restaurant Details</string>
+    <string name="favoriteScreen">Favorite</string>
+    <string name="searchScreen">Search</string>
+    <string name="quickScreen">Quick</string>
+    <string name="keywordPlaceHolder">キーワード（和食、ラーメン）</string>
+    <string name="distanceFromCurrentLocation">現在地からの距離（ｍ）</string>
+    <string name="searchDistance">検索範囲（m）</string>
+    <string name="search">検索</string>
+    <string name="quickSearch">クイック検索</string>
+    <string name="allShow">もっと見る</string>
+    <string name="noShopPhoto">店舗画像がありません</string>
+    <string name="favorite">お気に入り</string>
+    <string name="notFavorite">お気に入りではありません</string>
+    <string name="connectionError">インターネットに接続できませんでした</string>
+    <string name="thisIsShopPhoto">これは店舗画像です</string>
+    <string name="back">前の画面に戻ります</string>
 </resources>
